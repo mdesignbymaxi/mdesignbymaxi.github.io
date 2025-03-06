@@ -127,6 +127,7 @@ body {
     width: 30%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
 }
 
 .product-card:hover {
@@ -165,6 +166,33 @@ body {
 .add-to-cart:hover {
     background-color: #ffcc00;
     transform: scale(1.1);
+}
+
+/* Sold Out Styles */
+.product-card.sold-out {
+    opacity: 0.7;
+}
+
+.sold-out-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.add-to-cart:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.add-to-cart:disabled:hover {
+    background-color: #ccc;
+    transform: none;
 }
 
 /* Collections Section */

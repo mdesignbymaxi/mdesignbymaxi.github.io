@@ -370,54 +370,6 @@ body {
     color: #ff6f61;
 }
 
-/* Flappy Hat Game Section */
-.flappy-hat {
-    padding: 80px 0;
-    background-color: #fff;
-}
-
-.game-container {
-    position: relative;
-    width: 400px;
-    height: 600px;
-    background-color: #87CEEB;
-    border: 2px solid #000;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.hat {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background-color: #ff6f61;
-    border-radius: 50%;
-    top: 50%;
-    left: 50px;
-    transform: translateY(-50%);
-}
-
-.obstacle {
-    position: absolute;
-    width: 60px;
-    background-color: #228B22;
-    right: -60px;
-}
-
-#obstacle-top {
-    top: 0;
-}
-
-#obstacle-bottom {
-    bottom: 0;
-}
-
-.score {
-    text-align: center;
-    font-size: 24px;
-    margin-top: 20px;
-}
-
 /* Contact Section */
 .contact {
     padding: 80px 0;
@@ -583,10 +535,5 @@ body {
         flex-direction: column;
         align-items: center;
         text-align: center;
-    }
-
-    .game-container {
-        width: 90%;
-        height: 400px;
     }
 }

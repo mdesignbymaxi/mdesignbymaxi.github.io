@@ -46,5 +46,13 @@ chatForm.addEventListener('submit', (e) => {
     }
 });
 
+// Clear chat messages every 5 minutes
+setInterval(() => {
+    messages = []; // Clear the messages array
+    localStorage.removeItem('chatMessages'); // Remove messages from localStorage
+    displayMessages(); // Update the chat display
+    console.log('Chat messages cleared.'); // Optional: Log to console for debugging
+}, 5 * 60 * 1000); // 5 minutes in milliseconds
+
 // Initial display
 displayMessages();

@@ -67,7 +67,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #ff6f61, #ffcc00);
+    background: url('hero-bg.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 150px 0;
@@ -77,11 +77,13 @@ body {
     font-size: 48px;
     margin-bottom: 20px;
     font-family: 'Montserrat', sans-serif;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .hero-subtitle {
     font-size: 24px;
     margin-bottom: 40px;
+    animation: fadeIn 3s ease-in-out;
 }
 
 .cta-button {
@@ -92,11 +94,22 @@ body {
     border-radius: 50px;
     font-weight: bold;
     transition: background-color 0.3s, transform 0.3s;
+    animation: bounce 2s infinite;
 }
 
 .cta-button:hover {
     background-color: #ff6f61;
     transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
 /* Shop Section */
@@ -258,6 +271,153 @@ body {
     margin: 0 auto;
 }
 
+/* Newsletter Section */
+.newsletter {
+    padding: 80px 0;
+    background-color: #ff6f61;
+    color: #fff;
+    text-align: center;
+}
+
+.newsletter-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.newsletter-form button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+/* Chat Section */
+.chat {
+    padding: 80px 0;
+    background-color: #f4f4f9;
+}
+
+.chat-box {
+    height: 300px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.chat-form {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.chat-form button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.chat-form button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Chat Message Styles */
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+}
+
+.message strong {
+    color: #ff6f61;
+}
+
+/* Flappy Hat Game Section */
+.flappy-hat {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.game-container {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-color: #87CEEB;
+    border: 2px solid #000;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.hat {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ff6f61;
+    border-radius: 50%;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+}
+
+.obstacle {
+    position: absolute;
+    width: 60px;
+    background-color: #228B22;
+    right: -60px;
+}
+
+#obstacle-top {
+    top: 0;
+}
+
+#obstacle-bottom {
+    bottom: 0;
+}
+
+.score {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
 /* Contact Section */
 .contact {
     padding: 80px 0;
@@ -320,13 +480,48 @@ body {
 .footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    padding: 40px 0;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffcc00;
 }
 
 .social-media a {
     color: #fff;
-    margin: 0 10px;
+    margin-right: 10px;
     font-size: 20px;
     transition: color 0.3s;
 }
@@ -336,14 +531,15 @@ body {
 }
 
 .copyright {
-    margin-top: 10px;
+    text-align: center;
+    margin-top: 20px;
     font-size: 14px;
 }
 
 .credit {
+    text-align: center;
     margin-top: 10px;
     font-size: 14px;
-    color: #fff;
 }
 
 .credit a {
@@ -381,5 +577,16 @@ body {
 
     .product-card, .collection-item {
         width: 100%;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .game-container {
+        width: 90%;
+        height: 400px;
     }
 }

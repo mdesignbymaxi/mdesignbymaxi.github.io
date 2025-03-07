@@ -54,17 +54,14 @@ const hat = document.getElementById('hat');
 const obstacleTop = document.getElementById('obstacle-top');
 const obstacleBottom = document.getElementById('obstacle-bottom');
 const scoreDisplay = document.getElementById('score');
-let score = 0;
-let isGameOver = false;
 
-// Hat Movement
 let hatY = 250; // Initial Y position of the hat
-const gravity = 1.5; // Gravity effect
 let velocity = 0;
-
-// Obstacle Movement
+const gravity = 1.5; // Gravity effect
 let obstacleX = 400; // Initial X position of obstacles
 const obstacleSpeed = 3; // Speed of obstacles
+let score = 0;
+let isGameOver = false;
 
 // Update Game State
 function updateGame() {
@@ -81,10 +78,15 @@ function updateGame() {
     obstacleBottom.style.right = obstacleX + 'px';
 
     // Check for collision
+    const hatRect = hat.getBoundingClientRect();
+    const topObstacleRect = obstacleTop.getBoundingClientRect();
+    const bottomObstacleRect = obstacleBottom.getBoundingClientRect();
+
     if (
-        hatY < 0 || hatY > 560 || // Hat hits top or bottom
-        (obstacleX < 90 && obstacleX > 50 && // Hat hits obstacle
-            (hatY < 200 || hatY > 400))
+        hatRect.top < 0 || hatRect.bottom > 600 || // Hat hits top or bottom
+        (hatRect.left < topObstacleRect.right &&
+            hatRect.right > topObstacleRect.left &&
+            (hatRect.top < topObstacleRect.bottom || hatRect.bottom > bottomObstacleRect.top))
     ) {
         endGame();
     }

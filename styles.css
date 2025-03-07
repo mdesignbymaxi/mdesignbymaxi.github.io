@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #F4F4F9; /* Light gray background */
+    color: #333; /* Dark gray text */
     line-height: 1.6;
 }
 
@@ -17,8 +17,8 @@ body {
 
 /* Header */
 .header {
-    background-color: #ff6f61;
-    color: #fff;
+    background-color: #333; /* Dark gray header */
+    color: #fff; /* White text */
     padding: 20px 0;
     position: sticky;
     top: 0;
@@ -29,7 +29,7 @@ body {
 .logo a {
     font-size: 24px;
     font-weight: bold;
-    color: #fff;
+    color: #fff; /* White text */
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
 }
@@ -46,21 +46,21 @@ body {
 }
 
 .nav-link {
-    color: #fff;
+    color: #fff; /* White text */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .nav-link:hover {
-    color: #ffcc00;
+    color: #FFCC00; /* Golden yellow on hover */
 }
 
 .nav-toggle {
     display: none;
     background: none;
     border: none;
-    color: #fff;
+    color: #fff; /* White text */
     font-size: 24px;
     cursor: pointer;
 }
@@ -68,7 +68,7 @@ body {
 /* Hero Section */
 .hero {
     background: url('hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
+    color: #fff; /* White text */
     text-align: center;
     padding: 150px 0;
 }
@@ -87,8 +87,8 @@ body {
 }
 
 .cta-button {
-    background-color: #ffcc00;
-    color: #333;
+    background-color: #FF6F61; /* Coral button */
+    color: #fff; /* White text */
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 50px;
@@ -98,7 +98,7 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #ff6f61;
+    background-color: #FFCC00; /* Golden yellow on hover */
     transform: scale(1.1);
 }
 
@@ -115,7 +115,7 @@ body {
 /* Shop Section */
 .shop {
     padding: 80px 0;
-    background-color: #fff;
+    background-color: #fff; /* White background */
 }
 
 .section-title {
@@ -123,6 +123,7 @@ body {
     font-size: 36px;
     margin-bottom: 40px;
     font-family: 'Montserrat', sans-serif;
+    color: #333; /* Dark gray text */
 }
 
 .shop-grid {
@@ -133,7 +134,7 @@ body {
 }
 
 .product-card {
-    background-color: #fff;
+    background-color: #fff; /* White background */
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -157,17 +158,18 @@ body {
     font-size: 24px;
     margin: 10px 0;
     font-family: 'Montserrat', sans-serif;
+    color: #333; /* Dark gray text */
 }
 
 .product-price {
     font-size: 18px;
-    color: #ff6f61;
+    color: #FF6F61; /* Coral text */
     margin-bottom: 10px;
 }
 
 .add-to-cart {
-    background-color: #ff6f61;
-    color: #fff;
+    background-color: #FF6F61; /* Coral button */
+    color: #fff; /* White text */
     padding: 10px 20px;
     border: none;
     border-radius: 50px;
@@ -177,7 +179,7 @@ body {
 }
 
 .add-to-cart:hover {
-    background-color: #ffcc00;
+    background-color: #FFCC00; /* Golden yellow on hover */
     transform: scale(1.1);
 }
 
@@ -190,8 +192,8 @@ body {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #3498db;
-    color: #fff;
+    background-color: #3498DB; /* Blue label */
+    color: #fff; /* White text */
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
@@ -199,7 +201,7 @@ body {
 }
 
 .add-to-cart:disabled {
-    background-color: #ccc;
+    background-color: #ccc; /* Gray for disabled buttons */
     cursor: not-allowed;
 }
 
@@ -211,7 +213,7 @@ body {
 /* Collections Section */
 .collections {
     padding: 80px 0;
-    background-color: #f4f4f9;
+    background-color: #F4F4F9; /* Light gray background */
 }
 
 .collections-grid {
@@ -250,8 +252,8 @@ body {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: #fff; /* White text */
     text-align: center;
     padding: 10px;
     font-size: 24px;
@@ -261,7 +263,7 @@ body {
 /* About Section */
 .about {
     padding: 80px 0;
-    background-color: #fff;
+    background-color: #fff; /* White background */
 }
 
 .about-text {
@@ -269,13 +271,14 @@ body {
     font-size: 18px;
     max-width: 800px;
     margin: 0 auto;
+    color: #333; /* Dark gray text */
 }
 
 /* Newsletter Section */
 .newsletter {
     padding: 80px 0;
-    background-color: #ff6f61;
-    color: #fff;
+    background-color: #FF6F61; /* Coral background */
+    color: #fff; /* White text */
     text-align: center;
 }
 
@@ -299,8 +302,8 @@ body {
 }
 
 .newsletter-form button {
-    background-color: #ffcc00;
-    color: #333;
+    background-color: #FFCC00; /* Golden yellow button */
+    color: #333; /* Dark gray text */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -310,14 +313,14 @@ body {
 }
 
 .newsletter-form button:hover {
-    background-color: #fff;
+    background-color: #fff; /* White on hover */
     transform: scale(1.1);
 }
 
 /* Chat Section */
 .chat {
     padding: 80px 0;
-    background-color: #f4f4f9;
+    background-color: #F4F4F9; /* Light gray background */
 }
 
 .chat-box {
@@ -326,7 +329,7 @@ body {
     border-radius: 10px;
     padding: 20px;
     overflow-y: auto;
-    background-color: #fff;
+    background-color: #fff; /* White background */
     margin-bottom: 20px;
 }
 
@@ -343,8 +346,8 @@ body {
 }
 
 .chat-form button {
-    background-color: #ff6f61;
-    color: #fff;
+    background-color: #FF6F61; /* Coral button */
+    color: #fff; /* White text */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -354,7 +357,7 @@ body {
 }
 
 .chat-form button:hover {
-    background-color: #ffcc00;
+    background-color: #FFCC00; /* Golden yellow on hover */
     transform: scale(1.1);
 }
 
@@ -363,17 +366,17 @@ body {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    background-color: #ecf0f1;
+    background-color: #ECF0F1; /* Light gray background */
 }
 
 .message strong {
-    color: #ff6f61;
+    color: #FF6F61; /* Coral text */
 }
 
 /* Contact Section */
 .contact {
     padding: 80px 0;
-    background-color: #f4f4f9;
+    background-color: #F4F4F9; /* Light gray background */
 }
 
 .contact-form {
@@ -389,6 +392,7 @@ body {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #333; /* Dark gray text */
 }
 
 .form-group input, .form-group textarea {
@@ -399,8 +403,8 @@ body {
 }
 
 .submit-button {
-    background-color: #ff6f61;
-    color: #fff;
+    background-color: #FF6F61; /* Coral button */
+    color: #fff; /* White text */
     padding: 15px 30px;
     border: none;
     border-radius: 50px;
@@ -410,7 +414,7 @@ body {
 }
 
 .submit-button:hover {
-    background-color: #ffcc00;
+    background-color: #FFCC00; /* Golden yellow on hover */
     transform: scale(1.1);
 }
 
@@ -420,7 +424,7 @@ body {
 }
 
 .contact-info a {
-    color: #ff6f61;
+    color: #FF6F61; /* Coral text */
     text-decoration: none;
 }
 
@@ -430,8 +434,8 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #333; /* Dark gray background */
+    color: #fff; /* White text */
     padding: 40px 0;
 }
 
@@ -462,24 +466,24 @@ body {
 }
 
 .footer-section ul li a {
-    color: #fff;
+    color: #fff; /* White text */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-    color: #ffcc00;
+    color: #FFCC00; /* Golden yellow on hover */
 }
 
 .social-media a {
-    color: #fff;
+    color: #fff; /* White text */
     margin-right: 10px;
     font-size: 20px;
     transition: color 0.3s;
 }
 
 .social-media a:hover {
-    color: #ffcc00;
+    color: #FFCC00; /* Golden yellow on hover */
 }
 
 .copyright {
@@ -495,7 +499,7 @@ body {
 }
 
 .credit a {
-    color: #ffcc00;
+    color: #FFCC00; /* Golden yellow text */
     text-decoration: none;
 }
 
@@ -508,7 +512,7 @@ body {
     .nav-menu {
         display: none;
         flex-direction: column;
-        background-color: #ff6f61;
+        background-color: #333; /* Dark gray background */
         position: absolute;
         top: 60px;
         left: 0;
